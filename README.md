@@ -1,1 +1,2 @@
-# react-projects
+# About this repository
+This is a repository created by me, <b style="color: #AA336A;">Iskak Toltay</b> <sup>[Portfolio](https://iskaktoltay.com/)  [Instagram](https://www.instagram.com/program_with_iskak/)</sup> where I will post my react projects for other people to use as a reference for their software projects!
