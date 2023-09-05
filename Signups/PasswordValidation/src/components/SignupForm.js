@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { ReactComponent as SignupIcon } from '../img/signupIcon.svg';
 import '../App.css';
 
 function calculatePasswordStrength(password) {
-  const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+  const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#/$%/^&/*])(?=.{8,})");
   const mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");
   if (strongRegex.test(password)) return 'strong'
   if (mediumRegex.test(password)) return 'moderate'
@@ -43,6 +44,7 @@ function SignupForm() {
   return (
     <div className="signup-form-container">
       <form onSubmit={handleSubmit} className="signup-form">
+        <SignupIcon />
         <h2>Sign Up</h2>
         <div className="form-group">
           <input
